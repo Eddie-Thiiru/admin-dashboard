@@ -46,6 +46,23 @@ li {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     padding: 0px 20px 20px;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    height: 30px;
+    width: 90%;
+    gap: 15px;
+}
+
+label {
+    display: none;
+}
+
+input {
+    padding: 0px 10px;
 }
 
 .header-one > div {
@@ -70,7 +87,9 @@ li {
 
 .header-two div:first-child {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
+    gap: 15px;
+    align-items: center;
     padding: 0;
 }
 
@@ -140,9 +159,29 @@ li {
     font-weight: bold;
 }
 
-img[src='images/panda.svg'] {
-    height: 60px;
-    width: 60px
+.search-button {
+    border: none;
+    background: none;
+}
+
+.header-one img[src='images/cat.svg'] {
+    height: 50px;
+    width: 50px
+}
+
+.header-two img[src='images/cat.svg'] {
+    height: 100px;
+    width: 100px
+}
+
+.sidebar > h1 > img {
+    height: 50px;
+    width: 50px;
+}
+
+.trending img {
+    height: 50px;
+    width: 50px;
 }
 
 [src$='.svg'] {
