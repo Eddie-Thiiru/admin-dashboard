@@ -7,6 +7,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
     width: 100vw;
 }
@@ -31,6 +32,7 @@ body {
     background: #0ea5e9;  
     display: grid;
     grid-template-rows: 1fr 3fr 6fr; 
+    gap: 15px;
 }
 
 .sidebar h1,
@@ -101,7 +103,6 @@ input {
 }
 
 .main-content {
-    font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 40px 1fr 40px 1fr;
@@ -111,18 +112,20 @@ input {
 
 .main-content h2 {
     grid-row: 1 / 2;
+    align-self: end;
 }
 
 .main-content h2:nth-of-type(3) {
     grid-row: 3 / 4;
 }
 
-.projects {
+.main-content .projects {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    padding: 0px;
 }
 
 .projects > div {
@@ -130,6 +133,7 @@ input {
     border-left: solid 4px orange;
     background: #ffffff;
     border-radius: 5px;
+    box-shadow: 1px 2px 5px #94a3b8;
 }
 
 .announcements {
@@ -155,6 +159,8 @@ input {
 .trending,
 .announcements {
     background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #94a3b8;
 }
 
 ul,
@@ -189,6 +195,16 @@ input {
     border-radius: 25px;
 }
 
+.header-two button {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #0ea5e9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 100px;
+}
+
 .header-one img[src='images/cat.svg'] {
     height: 50px;
     width: 50px
@@ -215,6 +231,7 @@ input {
 }
 
 a {
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
