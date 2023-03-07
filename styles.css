@@ -8,8 +8,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     height: 100vh;
-    width: 100vw;
+   
 }
 
 .container {
@@ -18,7 +19,6 @@ body {
     grid-template-rows: 1fr 5fr;
     height: 100%;
     width: 100%;
-    font-size: 16px;
 }
 
 .container div {
@@ -39,10 +39,6 @@ body {
  li {
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
-
-li {
-    padding: 10px;
 }
 
 .header .header-one {
@@ -66,7 +62,15 @@ label {
 }
 
 input {
+    border: none;
+    background: #e2e8f0;
+    border-radius: 25px;
     padding: 0px 10px;
+}
+
+.search-button {
+    border: none;
+    background: none;
 }
 
 .header-one > div {
@@ -130,10 +134,21 @@ input {
 
 .projects > div {
     height: 200px;
-    border-left: solid 4px orange;
+    border-left: solid 6px #fb923c;
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 1px 2px 5px #94a3b8;
+    display: grid;
+}
+
+div .project-icons {
+    padding: 0;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    align-items: center;
+    justify-items: center;
 }
 
 .announcements {
@@ -168,31 +183,50 @@ li {
     list-style-type: none; 
 } 
 
+li {
+    padding: 10px;
+}
+
 h1, h2, h3 {
     font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+span {
+    font-size: 16px;
 }
 
 .announcements h3 {
     font-size: 14px;
 }
 
-p {
+.projects p {
     color: #6b7280;
 }
 
 .announcements p {
     font-size: 12px;
+    color: #6b7280;
 }
 
-.search-button {
-    border: none;
-    background: none;
+.trending p {
+    font-weight: bold;
 }
 
-input {
-    border: none;
-    background: #e2e8f0;
-    border-radius: 25px;
+.trending span {
+    font-weight: 400;
+    color: #6b7280;
 }
 
 .header-two button {
@@ -211,8 +245,8 @@ input {
 }
 
 .header-two img[src='images/cat.svg'] {
-    height: 100px;
-    width: 100px
+    height: 80px;
+    width: 80px
 }
 
 .sidebar > h1 > img {
@@ -235,4 +269,8 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
+}
+
+a:hover {
+    color: #fb923c;
 }
